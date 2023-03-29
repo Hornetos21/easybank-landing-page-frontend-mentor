@@ -1,0 +1,15 @@
+.features {
+  background-color: $lightGrayishBlue;
+  padding-top: 6.3rem;
+  padding-bottom: 6.6rem;
+  &__wrapper {
+    gap: 3rem;
+  }
+  &__item-icon {
+    margin-bottom: 2.2rem;
+  }
+}
+.icon-features {
+  width: 7.2rem;
+  height: 7.2rem;
+}

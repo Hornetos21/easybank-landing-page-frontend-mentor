@@ -1,0 +1,250 @@
+@media screen and (min-width: 600px) {
+  .articles__wrapper {
+    gap: 3rem;
+  }
+  .card,
+  .features__item {
+    max-width: 25.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .block {
+    text-align: left;
+  }
+  .title--article:hover {
+    color: $limeGreen;
+  }
+  .btn {
+    cursor: pointer;
+    &:hover {
+      filter: saturate(0.6) brightness(1.1);
+    }
+    &--header {
+      display: block;
+    }
+  }
+  .logo {
+    &--footer {
+      margin-bottom: 5.4rem;
+    }
+  }
+
+  /* Header */
+  .header {
+    height: 8rem;
+    &__wrapper {
+      height: 8rem;
+    }
+    &__nav-bar {
+      position: static;
+      width: auto;
+      background-color: inherit;
+      height: 100%;
+    }
+  }
+  .menu {
+    flex-direction: row;
+    padding: 0;
+    width: 36rem;
+    height: 100%;
+    place-items: center;
+    gap: 3rem;
+    &__item {
+      &--header {
+        a {
+          color: $grayishBlue;
+          font-size: 1.4rem;
+          position: relative;
+          transition: color 0.3s ease;
+          &:hover {
+            color: $darkBlue;
+            &::after {
+              transform: scaleX(1);
+            }
+          }
+          &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            height: 4px;
+            width: 100%;
+            margin-top: 2.58rem;
+            background: $gradient;
+            transform: scaleX(0);
+            transition: transform 0.2s ease-out;
+          }
+        }
+      }
+      &--footer {
+        margin-right: 11rem;
+        a {
+          font-size: 1.5rem;
+        }
+      }
+    }
+    &--footer {
+      width: auto;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 60%;
+      gap: 1.4rem;
+      align-items: baseline;
+    }
+  }
+  .menu-burger {
+    display: none;
+  }
+
+  /* Hero */
+  .hero {
+    &__wrapper {
+      position: relative;
+    }
+    &__images {
+      height: 75vw;
+    }
+    &__intro {
+      width: 47.75%;
+    }
+    &__mockup {
+      top: -12rem;
+      right: -14.4rem;
+    }
+  }
+
+  /* Footer */
+  .footer {
+    a {
+      transition: color 0.3s ease;
+      &:hover {
+        color: $limeGreen;
+      }
+    }
+    padding-bottom: 1rem;
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__nav-bar {
+      height: 15.1rem;
+      margin-bottom: 0;
+    }
+    &__wrapper-menu {
+      display: flex;
+    }
+    &__wrapper-icons {
+      margin-right: 13.1rem;
+    }
+    &__wrapper-btn {
+      text-align: right;
+    }
+  }
+  .social {
+    justify-content: flex-start;
+    gap: 1.3rem;
+    margin-bottom: 0;
+    &__link {
+      .icon--fill {
+        transition: fill 0.3s ease;
+      }
+      &:hover .icon--fill {
+        fill: $limeGreen;
+      }
+      svg {
+        transform: scale(1);
+      }
+    }
+  }
+}
+@media screen and (min-width: 1160px) {
+  .block {
+    padding: 0 16.5rem;
+  }
+  .title {
+    &--hero {
+      font-size: 5.5rem;
+      margin-bottom: 2.35rem;
+    }
+    &--features {
+      font-size: 4rem;
+      margin-bottom: 2.4rem;
+      &-item {
+        font-size: 2.5rem;
+        margin-bottom: 2.2rem;
+      }
+    }
+    &--articles {
+      font-size: 4rem;
+      margin-bottom: 5rem;
+    }
+  }
+  .text {
+    &--hero {
+      font-size: 1.9rem;
+      line-height: 1.5;
+      letter-spacing: -0.7px;
+      margin-bottom: 3.5rem;
+    }
+    &--features {
+      font-size: 1.8rem;
+      letter-spacing: -0.3px;
+      width: 60%;
+      margin-bottom: 6.9rem;
+      &-item {
+        font-size: 1.6rem;
+      }
+    }
+  }
+  .logo {
+    &--footer {
+      background-position: left;
+      margin-bottom: 5.3rem;
+    }
+  }
+  /* Hero */
+  .hero {
+    padding: 8rem 0 0 16.5rem;
+    &__wrapper {
+      flex-direction: row;
+      max-height: 65.6rem;
+    }
+    &__intro {
+      order: 1;
+      padding: 17rem 8rem 17rem 0;
+    }
+    &__images {
+      order: 2;
+      width: 68.25%;
+      margin-bottom: 0;
+      height: auto;
+      overflow-y: clip;
+    }
+    &__bg {
+      .image {
+        transform: scale(1.7) translate(11.1rem, -2.8rem);
+      }
+    }
+  }
+  /* Features */
+  .features {
+    padding-top: 10.3rem;
+    padding-bottom: 9.6rem;
+    &__item-icon {
+      margin-bottom: 3.7rem;
+    }
+  }
+  .articles {
+    padding-top: 9rem;
+    padding-bottom: 8.5rem;
+  }
+  .card__article {
+    padding: 1.7rem 2.1rem 1.9rem 2.5rem;
+  }
+  /* Footer */
+  .footer {
+    padding-top: 4.9rem;
+    &__wrapper-icons {
+      margin-right: 12.8rem;
+    }
+  }
+}
