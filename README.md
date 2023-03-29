@@ -4,6 +4,8 @@
 
 ## Welcome! 👋
 
+[Solution](https://hornetos21.github.io/easybank-landing-page-frontend-mentor/) | [Challenge](https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN)
+
 ## The challenge
 
 Your challenge is to build out this landing page and get it looking as close to the design as possible.
